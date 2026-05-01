@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00F8F879-6C4E-4713-846A-E1A3ADE16F26}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Win81StoreRevival</RootNamespace>
+    <AssemblyName>Win81StoreRevival</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCore</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>Win81StoreRevival.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Dynamic.Runtime" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Linq.Expressions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Reference Include="System.Runtime.Serialization.Xml" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="Windows" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutSettingsFlyout.cs" />
+    <Compile Include="AccountPage.cs" />
+    <Compile Include="AccountReviewCard.cs" />
+    <Compile Include="Account\Discord.cs" />
+    <Compile Include="Account\Login.cs" />
+    <Compile Include="Account\Register.cs" />
+    <Compile Include="AddRating.cs" />
+    <Compile Include="AllAppsPage.cs" />
+    <Compile Include="AllAppsPage1.cs" />
+    <Compile Include="ApiResponse.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="AppCollection.cs" />
+    <Compile Include="AppDetailsNavigationData.cs" />
+    <Compile Include="AppDetailsPage.cs" />
+    <Compile Include="AppReviewsND.cs" />
+    <Compile Include="AppReviewsPage.cs" />
+    <Compile Include="AppReviewStatsResponse.cs" />
+    <Compile Include="AppVersionInfo.cs" />
+    <Compile Include="BooleanToVisibilityConverter.cs" />
+    <Compile Include="CacheApp.cs" />
+    <Compile Include="CollectionsViewPage.cs" />
+    <Compile Include="Common\BooleanNegationConverter.cs" />
+    <Compile Include="Common\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Common\ColorConverter.cs" />
+    <Compile Include="Common\LoadStateEventArgs.cs" />
+    <Compile Include="Common\LoadStateEventHandler.cs" />
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\SaveStateEventArgs.cs" />
+    <Compile Include="Common\SaveStateEventHandler.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Common\SuspensionManagerException.cs" />
+    <Compile Include="Config\Config.cs" />
+    <Compile Include="CosmeticFlyout.cs" />
+    <Compile Include="DescriptionPlaceholderConverter.cs" />
+    <Compile Include="DownloadedAppInfo.cs" />
+    <Compile Include="DownloadedAppRecord.cs" />
+    <Compile Include="DownloadItem.cs" />
+    <Compile Include="DownloadManager.cs" />
+    <Compile Include="DownloadsHub.cs" />
+    <Compile Include="FactoryResetFlyout.cs" />
+    <Compile Include="FatalErrorScreen.cs" />
+    <Compile Include="Flyouts\LoginFlyout.cs" />
+    <Compile Include="Flyouts\RegisterFlyout.cs" />
+    <Compile Include="FullScreenViewPage.cs" />
+    <Compile Include="GeneralSettingsFlyout.cs" />
+    <Compile Include="HttpClientHelper.cs" />
+    <Compile Include="InstalledAppsPage.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="LanguageSettingsFlyout.cs" />
+    <Compile Include="Languages\Data.cs" />
+    <Compile Include="Languages\LangItem.cs" />
+    <Compile Include="MainPage.cs" />
+    <Compile Include="MainPageNavigationData.cs" />
+    <Compile Include="MiniJSON\Json.cs" />
+    <Compile Include="PopularPage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublisherAppsPage.cs" />
+    <Compile Include="PublisherPageData.cs" />
+    <Compile Include="RatingSummary.cs" />
+    <Compile Include="RatingToRectangleConverter.cs" />
+    <Compile Include="Review.cs" />
+    <Compile Include="ReviewResult.cs" />
+    <Compile Include="ReviewStats.cs" />
+    <Compile Include="SearchResultsPage.cs" />
+    <Compile Include="SessionData.cs" />
+    <Compile Include="SettingsHelper.cs" />
+    <Compile Include="SettingsPage.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="StarViewModel.cs" />
+    <Compile Include="StoreApp.cs" />
+    <Compile Include="StringToBitmapImageConverter.cs" />
+    <Compile Include="SupabaseService.cs" />
+    <Compile Include="SuspensionManager.cs" />
+    <Compile Include="Themes\Control.cs" />
+    <Compile Include="TileApp.cs" />
+    <Compile Include="TileGroup.cs" />
+    <Compile Include="TileRoot.cs" />
+    <Compile Include="UpdateNavigationData.cs" />
+    <Compile Include="UpdatePage.cs" />
+    <Compile Include="UserAccount.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\Activator.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\AddToCollection.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\AddToDictionary.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\Getter.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\Setter.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\XamlMember.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\XamlSystemBaseType.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\XamlTypeInfoProvider.cs" />
+    <Compile Include="Win81StoreRevival_XamlTypeInfo\XamlUserType.cs" />
+    <Compile Include="ZeroToVisibilityConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{00f8f879-6c4e-4713-846a-e1a3ade16f22}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
