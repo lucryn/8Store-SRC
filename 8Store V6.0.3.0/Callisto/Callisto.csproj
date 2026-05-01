@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AA35214-189B-48FB-9522-7457E59A1E41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Callisto</RootNamespace>
+    <AssemblyName>Callisto</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCore</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime" />
+    <Reference Include="System.Runtime.WindowsRuntime.UI.Xaml" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xml.XDocument" />
+    <Reference Include="Windows" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Callisto_XamlTypeInfo\Activator.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\AddToCollection.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\AddToDictionary.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\Getter.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\Setter.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\XamlMember.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\XamlMetaDataProvider.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\XamlSystemBaseType.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\XamlTypeInfoProvider.cs" />
+    <Compile Include="Callisto_XamlTypeInfo\XamlUserType.cs" />
+    <Compile Include="Controls\BackClickedEventArgs.cs" />
+    <Compile Include="Controls\Common\AppManifestHelper.cs" />
+    <Compile Include="Controls\Common\InteractionHelper.cs" />
+    <Compile Include="Controls\Common\ItemsControlHelper.cs" />
+    <Compile Include="Controls\Common\IUpdateVisualState.cs" />
+    <Compile Include="Controls\Common\VisualElement.cs" />
+    <Compile Include="Controls\Common\VisualStates.cs" />
+    <Compile Include="Controls\CustomDialog.cs" />
+    <Compile Include="Controls\DropDownButton.cs" />
+    <Compile Include="Controls\DynamicTextBlock.cs" />
+    <Compile Include="Controls\EnumerableFunctions.cs" />
+    <Compile Include="Controls\ExpandDirection.cs" />
+    <Compile Include="Controls\FlipViewIndicator.cs" />
+    <Compile Include="Controls\Flyout.cs" />
+    <Compile Include="Controls\LiveTile.cs" />
+    <Compile Include="Controls\Menu.cs" />
+    <Compile Include="Controls\MenuItem.cs" />
+    <Compile Include="Controls\MenuItemBase.cs" />
+    <Compile Include="Controls\MenuItemSeparator.cs" />
+    <Compile Include="Controls\NumericUpDown.cs" />
+    <Compile Include="Controls\OrientedSize.cs" />
+    <Compile Include="Controls\Primitives\Clipper.cs" />
+    <Compile Include="Controls\Primitives\LinearClipper.cs" />
+    <Compile Include="Controls\Rating.cs" />
+    <Compile Include="Controls\RatingItem.cs" />
+    <Compile Include="Controls\RatingSelectionMode.cs" />
+    <Compile Include="Controls\SettingsFlyout.cs" />
+    <Compile Include="Controls\SettingsManagement\AppSettings.cs" />
+    <Compile Include="Controls\SettingsManagement\INotifySettingChanged.cs" />
+    <Compile Include="Controls\SettingsManagement\ISettingsCommandInfo.cs" />
+    <Compile Include="Controls\SettingsManagement\SettingChangedEventArgs.cs" />
+    <Compile Include="Controls\SettingsManagement\SettingsCommandInfo.cs" />
+    <Compile Include="Controls\ToggleMenuItem.cs" />
+    <Compile Include="Controls\ValueChangedEventArgs.cs" />
+    <Compile Include="Controls\ValueChangedEventHandler.cs" />
+    <Compile Include="Controls\WatermarkTextBox.cs" />
+    <Compile Include="Controls\WrapPanel.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\BrushToColorConverter.cs" />
+    <Compile Include="Converters\ColorBrightnessConverter.cs" />
+    <Compile Include="Converters\ColorContrastConverter.cs" />
+    <Compile Include="Converters\DateTimeFormatHelper.cs" />
+    <Compile Include="Converters\RelativeTimeConverter.cs" />
+    <Compile Include="Converters\StringLengthToBooleanConverter.cs" />
+    <Compile Include="Effects\Tilt.cs" />
+    <Compile Include="Effects\TreeHelpers.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="NumericExtensions.cs" />
+    <Compile Include="OAuth\NameValueCollection.cs" />
+    <Compile Include="OAuth\OAuthSignatureMethod.cs" />
+    <Compile Include="OAuth\OAuthSignatureTreatment.cs" />
+    <Compile Include="OAuth\OAuthTools.cs" />
+    <Compile Include="OAuth\WebMethod.cs" />
+    <Compile Include="OAuth\WebPair.cs" />
+    <Compile Include="OAuth\WebPairCollection.cs" />
+    <Compile Include="OAuth\WebParameter.cs" />
+    <Compile Include="OAuth\WebParameterCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebViewExtension.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
