@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win81StoreRevival", "Win81StoreRevival\Win81StoreRevival.csproj", "{133EBEC7-4D9C-4C15-ADF4-0367916B8795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Callisto", "Callisto\Callisto.csproj", "{133EBEC7-4D9C-4C15-ADF4-0367916B8790}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json", "Newtonsoft.Json\Newtonsoft.Json.csproj", "{133EBEC7-4D9C-4C15-ADF4-0367916B8791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.ComponentModel.Primitives", "System.ComponentModel.Primitives\System.ComponentModel.Primitives.csproj", "{133EBEC7-4D9C-4C15-ADF4-0367916B8792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.ComponentModel.TypeConverter", "System.ComponentModel.TypeConverter\System.ComponentModel.TypeConverter.csproj", "{133EBEC7-4D9C-4C15-ADF4-0367916B8793}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Runtime.InteropServices.RuntimeInformation", "System.Runtime.InteropServices.RuntimeInformation\System.Runtime.InteropServices.RuntimeInformation.csproj", "{133EBEC7-4D9C-4C15-ADF4-0367916B8794}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133EBEC7-4D9C-4C15-ADF4-0367916B8794}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
