@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00F8F879-6C4E-4713-846A-E1A3ADE16F24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.ComponentModel.TypeConverter</RootNamespace>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Reflection.Primitives" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Threading" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FxResources\System\ComponentModel\TypeConverter\SR.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\ComponentModel\ArrayConverter.cs" />
+    <Compile Include="System\ComponentModel\BaseNumberConverter.cs" />
+    <Compile Include="System\ComponentModel\BooleanConverter.cs" />
+    <Compile Include="System\ComponentModel\ByteConverter.cs" />
+    <Compile Include="System\ComponentModel\CharConverter.cs" />
+    <Compile Include="System\ComponentModel\CollectionConverter.cs" />
+    <Compile Include="System\ComponentModel\DateTimeConverter.cs" />
+    <Compile Include="System\ComponentModel\DateTimeOffsetConverter.cs" />
+    <Compile Include="System\ComponentModel\DecimalConverter.cs" />
+    <Compile Include="System\ComponentModel\DoubleConverter.cs" />
+    <Compile Include="System\ComponentModel\EnumConverter.cs" />
+    <Compile Include="System\ComponentModel\GuidConverter.cs" />
+    <Compile Include="System\ComponentModel\Int16Converter.cs" />
+    <Compile Include="System\ComponentModel\Int32Converter.cs" />
+    <Compile Include="System\ComponentModel\Int64Converter.cs" />
+    <Compile Include="System\ComponentModel\ITypeDescriptorContext.cs" />
+    <Compile Include="System\ComponentModel\MultilineStringConverter.cs" />
+    <Compile Include="System\ComponentModel\NullableConverter.cs" />
+    <Compile Include="System\ComponentModel\PropertyDescriptor.cs" />
+    <Compile Include="System\ComponentModel\ReflectTypeDescriptionProvider.cs" />
+    <Compile Include="System\ComponentModel\SByteConverter.cs" />
+    <Compile Include="System\ComponentModel\SingleConverter.cs" />
+    <Compile Include="System\ComponentModel\StringConverter.cs" />
+    <Compile Include="System\ComponentModel\TimeSpanConverter.cs" />
+    <Compile Include="System\ComponentModel\TypeConverter.cs" />
+    <Compile Include="System\ComponentModel\TypeConverterAttribute.cs" />
+    <Compile Include="System\ComponentModel\TypeDescriptor.cs" />
+    <Compile Include="System\ComponentModel\TypeListConverter.cs" />
+    <Compile Include="System\ComponentModel\UInt16Converter.cs" />
+    <Compile Include="System\ComponentModel\UInt32Converter.cs" />
+    <Compile Include="System\ComponentModel\UInt64Converter.cs" />
+    <Compile Include="System\SR.cs" />
+    <Compile Include="System\UriTypeConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FxResources\System\ComponentModel\TypeConverter\SR.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.ComponentModel.Primitives\System.ComponentModel.Primitives.csproj">
+      <Project>{00f8f879-6c4e-4713-846a-e1a3ade16f23}</Project>
+      <Name>System.ComponentModel.Primitives</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
